@@ -1,0 +1,6 @@
+[submodule "Backend"]
+	path = Backend
+	url = https://github.com/sarthakme/headphones-arsenal.git
+[submodule "Frontend"]
+	path = Frontend
+	url = https://github.com/sarthakme/sugared-science.git
