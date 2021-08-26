@@ -50,7 +50,7 @@ jobs:
             - run:
                 name: deploy-server
                 command: |
-                    dir
+                    ls
                     
 workflows:
     version: 2
