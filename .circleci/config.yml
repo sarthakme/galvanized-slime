@@ -47,7 +47,7 @@ jobs:
                 command: |
                     cd Backend
                     pip install awsebcli
-                    eb deploy
+                    eb deploy --profile default
 workflows:
     version: 2
     build-and-deploy:
