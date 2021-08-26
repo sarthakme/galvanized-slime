@@ -45,7 +45,6 @@ jobs:
                 name: install ebcli
                 command: |
                     cd Backend
-                    npx tsc
                     pip install awsebcli
                     eb deploy
 workflows:
