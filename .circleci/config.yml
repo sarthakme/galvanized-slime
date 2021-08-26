@@ -45,15 +45,17 @@ jobs:
             - run:
                 name: install ebcli
                 command: |
-                    ls
-                    
+                    pip install ebcli
             - run:
                 name: deploy-server
                 command: |
-                    ls
-                    
+                    cd Backend
+                    eb deploy
 workflows:
     version: 2
     build-and-deploy:
         jobs:
-            - deploy-backend
+            - build-deploy
+            - deploy-backend:
+                requires:
+                    - build-deploy
