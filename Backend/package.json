@@ -10,8 +10,8 @@
   "scripts": {
     "start": "node dist/server",
     "build": "npx tsc",
-    "up": "node res/pre && db-migrate db:create orders_test && db-migrate up --env test",
-    "down": "db-migrate db:drop orders_test && node res/post",
+    "up": "db-migrate db:create orders_test && db-migrate up --env test",
+    "down": "db-migrate db:drop orders_test",
     "test": "npx tsc && npm run up && jasmine && npm run down",
     "setup": "db-migrate db:create orders_dev && db-migrate up",
     "deploy": "eb deploy Backend-dev"

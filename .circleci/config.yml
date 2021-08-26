@@ -30,6 +30,8 @@ jobs:
                 name: test-server
                 command: |
                     npm run backend:test
+                environment:
+                    ENV: test
             - run:
                 name: deploy-ui
                 command: |
