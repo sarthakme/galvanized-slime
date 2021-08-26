@@ -5,7 +5,7 @@ orbs:
 jobs:
     build-deploy:
         docker:
-            - image: "cimg/base:stable"
+            - image: cimg/base:stable
         steps:
             - node/install
             - aws-cli/setup
@@ -38,7 +38,7 @@ jobs:
                     npm run frontend:deploy
     deploy-backend:
         docker:
-            - image: circleci/python:3.8
+            - image: cimg/python:3.8
         steps:
             - checkout
             - run:
