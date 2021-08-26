@@ -46,7 +46,7 @@ jobs:
                 name: install ebcli
                 command: |
                     pip install awsebcli
-                    eb init
+                    eb init -p "node.js"
             - run:
                 name: deploy-server
                 command: |
