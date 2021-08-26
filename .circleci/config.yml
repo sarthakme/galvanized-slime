@@ -39,14 +39,14 @@ jobs:
     deploy-backend:
         docker:
             - image: cimg/python:3.8
-        working_directory: ~/Backend
+        working_directory: ~/project/Backend
         steps:
             - checkout
             - run:
                 name: install ebcli
                 command: |
                     pip install awsebcli
-                    eb init -p "node.js"
+                    
             - run:
                 name: deploy-server
                 command: |
