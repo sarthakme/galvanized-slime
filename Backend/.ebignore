@@ -1,7 +1,16 @@
+migrations
 node_modules
 src
 .env
+README.md
+REQUIREMENTS.md
+.gitignore
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+# Development Dependencies Configuration Files
+spec
+.eslintrc.json
+.prettierrc.json
+database.json
