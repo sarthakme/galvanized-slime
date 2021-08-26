@@ -46,11 +46,12 @@ jobs:
                 name: install ebcli
                 command: |
                     pip install awsebcli
+                    eb init
             - run:
                 name: deploy-server
                 command: |
                     dir
-                    eb deploy Backend-dev
+                    
 workflows:
     version: 2
     build-and-deploy:
