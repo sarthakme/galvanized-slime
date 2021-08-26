@@ -49,8 +49,9 @@ jobs:
                     npm run backend:deploy
 workflows:
     version: 2
-    jobs:
-        - build-deploy
-        - deploy-backend:
-            requires:
-                - build-deploy
+    build-and-deploy:
+        jobs:
+            - build-deploy
+            - deploy-backend:
+                requires:
+                    - build-deploy
