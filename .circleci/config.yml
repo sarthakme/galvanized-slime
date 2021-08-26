@@ -43,13 +43,10 @@ jobs:
         steps:
             - checkout
             - run:
-                name: install ebcli
-                command: |
-                    pip install ebcli
-            - run:
                 name: deploy-server
                 command: |
                     cd Backend
+                    pip install ebcli
                     eb deploy
 workflows:
     version: 2
