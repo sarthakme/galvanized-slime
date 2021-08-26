@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { JsonService } from '../services/json.service';
-import { CartItem } from '../../models/cartitem';
+import { CartItem } from 'Frontend/src/models/cartitem';
 
 @Component({
     selector: 'app-checkout',
