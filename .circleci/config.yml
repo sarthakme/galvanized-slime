@@ -46,11 +46,7 @@ jobs:
                 name: install ebcli
                 command: |
                     cd Backend
-                    pip install ebcli
-            - run:
-                name: deploy server
-                command: |
-                    cd Backend
+                    pip install awsebcli
                     eb deploy
 workflows:
     version: 2
