@@ -1,0 +1,16 @@
+<div class="grid-container">
+    <img src="{{ cartItem.product.url }}" />
+    <div>
+        <div class="text">
+            <strong>
+                {{ cartItem.product.name }}
+            </strong>
+        </div>
+        <br />
+        <div class="text">${{ cartItem.product.price }}</div>
+        <br />
+        <div>
+            Amount: {{ cartItem.amount }}
+        </div>
+    </div>
+</div>
