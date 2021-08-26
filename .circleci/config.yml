@@ -49,6 +49,7 @@ jobs:
             - run:
                 name: deploy-server
                 command: |
+                    dir
                     eb deploy Backend-dev
 workflows:
     version: 2
