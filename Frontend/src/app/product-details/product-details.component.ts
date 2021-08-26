@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { JsonService } from '../services/json.service';
-import { CartItem } from 'src/models/cartitem';
-import { Product } from 'src/models/product';
+import { CartItem } from '../../models/cartitem';
+import { Product } from '../../models/product';
 
 @Component({
     selector: 'app-product-details',

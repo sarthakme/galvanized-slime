@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Product } from 'src/models/product';
-import { CartItem } from 'src/models/cartitem';
+import { Product } from '../../models/product';
+import { CartItem } from '../../models/cartitem';
 import { Observable } from 'rxjs';
 
 @Injectable({

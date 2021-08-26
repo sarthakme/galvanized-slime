@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Product } from 'src/models/product';
+import { Product } from '../../models/product';
 import { JsonService } from '../services/json.service';
 
 @Component({
