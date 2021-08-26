@@ -39,7 +39,6 @@ jobs:
     deploy-backend:
         docker:
             - image: cimg/python:3.8
-        working_directory: ~/project/Backend
         steps:
             - checkout
             - run:
