@@ -1,0 +1,5 @@
+To run this application, open a web browser and enter `http://slimebucket.s3-website-us-east-1.amazonaws.com`.
+
+To build the project locally npm 7, Node.js 14 and pip 3 need to be installed. pip is required to install EB CLI which allows easy deployment of the application to AWS Elastic Beanstalk.
+
+To configure Angular to work in a development environment, go to Frontend/src/environments/ and edit the environment.prod.ts and set the value of environment.production to false. This will allow the user to set different values for production and development environment variables. This is already configured in the Node.js/Express.js backend.

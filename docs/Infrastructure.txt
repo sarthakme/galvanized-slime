@@ -1,0 +1,5 @@
+Static files built from the Angular project in the frontend folder are stored in an S3 bucket. The ACL is configured to allow public read access, which allows anyone to read the contents of the website, without editing them.
+
+The backend API is hosted on an EC2 instance configured using AWS Elastic Beanstalk. It runs on 64 bit Amazon Linux 2 with Node.js 14. It acts as an intermediary between the frontend and the database.
+
+The API refers a publicly accessible Postgres 12 database stored on AWS RDS.

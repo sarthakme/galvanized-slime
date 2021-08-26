@@ -1,0 +1,18 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "backend:install": "cd Backend && npm install && cd ..",
+    "frontend:install": "cd Frontend && npm install && cd ..",
+    "backend:build": "cd Backend && npm run build && cd ..",
+    "frontend:build": "cd Frontend && npm run build && cd ..",
+    "backend:test": "cd Backend && npm test && cd ..",
+    "backend:deploy": "cd Backend && npm run deploy && cd ..",
+    "frontend:deploy": "cd Frontend && npm run deploy && cd .."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,5 @@
+The CI/CD pipeline is configured using CircleCI. CircleCI has been connected to the GitHub account on which this application is stored as a Git repository.
+
+As soon as any changes are pushed to the main branch of the repository, the CI/CD pipeline starts. First, the source code pushed to the Git repository is loaded onto a virtual machine and automated testing is conducted. If the tests pass, the code is deployed to the respective S3 bucket and AWS Elastic Beanstalk application using AWS CLI v2 and EB CLI respectively.
+
+To do this, CircleCI uses npm scripts and shell commands specified in the .circleci/config.yaml. The environments of the virtual machines can be specified in this file. The user can also specify which technologies need to be downloaded and configured in the virtual machine to run the tests and deploy the application to the intended destination.
