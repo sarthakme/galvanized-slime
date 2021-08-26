@@ -5,6 +5,7 @@ src
 README.md
 REQUIREMENTS.md
 .gitignore
+Backend.zip
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
@@ -14,3 +15,4 @@ spec
 .eslintrc.json
 .prettierrc.json
 database.json
+tsconfig.json
