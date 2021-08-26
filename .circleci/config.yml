@@ -38,7 +38,7 @@ jobs:
                     npm run frontend:deploy
     deploy-backend:
         docker:
-            - image: circleci/python:2.7
+            - image: circleci/python:3.8
         steps:
             - checkout
             - run:
