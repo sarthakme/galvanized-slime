@@ -45,7 +45,7 @@ jobs:
             - run:
                 name: install ebcli
                 command: |
-                    pip install awsebcli
+                    ls
                     
             - run:
                 name: deploy-server
