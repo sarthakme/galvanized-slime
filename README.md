@@ -1,0 +1,3 @@
+This project emulates the working of an E-commerce website. The frontend is made using Angular, while the backend uses Node.js and Express.js. The data for the products and customers is stored in a PostreSQL database.
+
+The project has been configured so that whenever new code is pushed onto the GitHub repository, it triggers a pipeline using CircleCI and automatially uploads the contents of the project onto different AWS services, deploying the newest version of the application on the cloud.
