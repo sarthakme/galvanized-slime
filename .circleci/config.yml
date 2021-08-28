@@ -55,3 +55,8 @@ jobs:
                     eb setenv POSTGRES_HOST=${POSTGRES_HOST} POSTGRES_DB=${POSTGRES_DB} POSTGRES_USER=${POSTGRES_USER} POSTGRES_PASSWORD=${POSTGRES_PASSWORD} ENV=${ENV}
                     eb deploy
                     cd ..
+workflows:
+    version: 2
+    build-deploy:
+        jobs:
+            - build-deploy
