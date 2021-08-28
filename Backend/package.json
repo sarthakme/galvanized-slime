@@ -14,7 +14,7 @@
     "down": "db-migrate db:drop orders_test",
     "test": "npx tsc && npm run up && jasmine && npm run down",
     "setup": "db-migrate db:create orders_dev && db-migrate up",
-    "deploy": "eb deploy Backend-dev"
+    "deploy": "eb deploy"
   },
   "author": "",
   "license": "ISC",
